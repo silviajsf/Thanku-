@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --soft-beige: #f5f0e6;
+            --peachy-pink: #ffb6b9;
+            --soft-navy: #6a7ba2;
+            --text-dark: #333;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--soft-beige);
+            color: var(--text-dark);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        section {
+            min-height: 100vh;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* Landing Page */
+        #landing {
+            text-align: center;
+        }
+        
+        .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        #main-title {
+            font-size: 3.5rem;
+            color: var(--soft-navy);
+            margin-bottom: 1rem;
+        }
+        
+        #subtitle {
+            font-size: 1.1rem;
+            color: var(--peachy-pink);
+            margin-bottom: 2rem;
+            min-height: 1.5rem;
+            max-width: 500px;
+            line-height: 1.6;
+        }
+        
+        button {
+            background-color: var(--peachy-pink);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.8rem;
+            border-radius: 2rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 1rem;
+        }
+        
+        button:hover {
+            background-color: var(--soft-navy);
+            transform: translateY(-3px);
+        }
+        
+        /* Letter Section */
+        #letter {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        
+        .letter-content {
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .letter-content p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .signature {
+            text-align: right;
+            margin-top: 2rem;
+            font-style: italic;
+        }
+        
+        /* Animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        /* Responsive */
+        @media (max-width: 600px) {
+            #main-title {
+                font-size: 2.5rem;
+            }
+            
+            .letter-content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Landing Page -->
+    <section id="landing">
+        <div class="icon">✉️</div>
+        <h1 id="main-title">For You</h1>
+        <p id="subtitle"></p>
+        <button id="continue-btn">Open Letter</button>
+    </section>
+    
+    <!-- Letter Section -->
+    <section id="letter" class="hidden">
+        <div class="letter-content">
+            <p>Hi, Faiz.</p>
+            
+            <p>Maaf ya.
+Aku ngerasa agak nggak enak sebenarnya mungkin kamu udah notice aku kadang suka unsend chat. Termasuk yang kemarin… I keep thinking maybe what I sent was too much, or annoying. I'm sorry if it ever felt like that.</p>
+            
+            <p>Aku cuma… ngerasa ada yang harus aku sampaikan. Tapi sebelum itu — thank you.
+I mean it. Like, really really thank you.</p>
+            
+            <p>Thanks for listening to all my random stories that honestly don't always make sense. For reading long texts from me and replying with even longer ones. For sending me voice notes just to hear my chaotic voice even when it's 7 minutes of "ya aku tuh cuma pengen cerita aja." For staying up late just to keep me company. You didn't have to, but you did — and that means the world to me.</p>
+            
+            <p>Kadang aku mikir… kok ya kamu baik banget, sih?
+And sometimes I feel a little guilty. Sorry if I ever bothered you, especially during your KKN. I know you've been busy. But you still found time for me. That never went unnoticed.</p>
+            
+            <p>Good news is — it's almost done, kan?
+Soon you'll move on to the next thing: magang! I genuinely wish you all the best for that. You're gonna kill it, Faiz. I believe in you. The future's just out there waiting for you to claim it, and I hope you do — with everything you've got.</p>
+            
+            <p>I'm so proud of you. I hope you know that.</p>
+            
+            <p>Now… this part is the hard one.</p>
+            
+            <p>Lately, aku ngerasa aku mulai berubah. A little weird, a little quiet sometimes, or maybe just a little more… present. And maybe you noticed it, maybe you didn't — or maybe I just overthink too much. Idk. Tapi kadang aku mikir, kamu sadar gak ya? Kamu ngerasain gak sih?</p>
+            
+            <p>Aku nggak tau ya ini karena aku emang lagi di fase hidup yang… somehow lagi butuh seseorang, dan kamu ada. Dan kamu nggak cuma hadir — kamu dengerin. You stayed. That matters so much to me.</p>
+            
+            <p>Maaf kalau akhir-akhir ini aku kayak oversharing. Mungkin karena aku terlalu lama nyimpan semuanya sendiri. And when someone finally listens — when you listen — it felt warm. Kayak pelan-pelan, aku bisa nafas lagi.</p>
+            
+            <p>I hope this letter doesn't change how you see me.</p>
+            
+            <p>I'm not trying to pressure you, or demand anything in return. This is not that kind of letter. Aku cuma… pengen jujur. Karena kalau aku nggak bilang sekarang, maybe I never will. And maybe this feeling will stay hidden forever, and honestly? I think it deserves to breathe.</p>
+            
+            <p>So here it is:</p>
+            
+            <p style="font-weight: 500; margin: 1.5rem 0;">Aku suka sama kamu.</p>
+            
+            <p>Dan nanti kalau kamu nanya, "suka yang kayak gimana?" — maybe aku juga bingung jelasinnya. But let's just say, there's a part of me that lights up whenever I see your name pop up. A quiet comfort in knowing you're there, even if just behind the screen. It's not obsession, not drama, not fairy tale. Just a gentle kind of liking. Like a soft song on a rainy day. Calm. Familiar. And real.</p>
+            
+            <p>I don't expect anything from this. I swear.
+This isn't a "please like me back" letter. This is just me being honest. Letting my heart take a deep breath and say what it's been meaning to.</p>
+            
+            <p>Tapi jujur, aku takut.</p>
+            
+            <p>I'm scared that after this, things might be different. That you might pull away. That the comfort I found in you might suddenly disappear. And I really, really hope that won't happen. Aku cuma pengen bilang, and that's it.</p>
+            
+            <p>Remember the time I randomly asked you if you had a partner? I wasn't trying to be nosy. I was just… trying to measure my own feelings. To check if I was out of line. That tiny moment helped me understand myself a little better.</p>
+            
+            <p>So yeah. Ini cuma tentang… letting you know.
+Because feelings deserve to be heard too — even if they don't get answered.</p>
+            
+            <p>Thank you for being you. For showing up. For making things lighter, warmer, and sometimes — without knowing — healing.</p>
+            
+            <p>Please don't change. Please don't pull away.
+Just… stay you.</p>
+            
+            <p>Stay kind. Stay brilliant. Keep being you.
+Thank you for letting me feel this way about you.</p>
+            
+            <div class="signature">
+                <p>That's all.</p>
+                <p>Sincerely,</p>
+                <p>Me.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Typewriter effect
+            const subtitle = document.getElementById('subtitle');
+            const texts = [
+                "A message that needed to be written...",
+                "Some words are easier to express this way...",
+                "Because some things deserve to be said..."
+            ];
+            const randomText = texts[Math.floor(Math.random() * texts.length)];
+            let i = 0;
+            
+            function typeWriter() {
+                if (i < randomText.length) {
+                    subtitle.innerHTML += randomText.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 50);
+                }
+            }
+            
+            setTimeout(typeWriter, 500);
+            
+            // Continue button
+            const continueBtn = document.getElementById('continue-btn');
+            continueBtn.addEventListener('click', function() {
+                document.getElementById('landing').classList.add('hidden');
+                document.getElementById('letter').classList.remove('hidden');
+                window.scrollTo(0, 0);
+            });
+        });
+    </script>
+</body>
+</html>
